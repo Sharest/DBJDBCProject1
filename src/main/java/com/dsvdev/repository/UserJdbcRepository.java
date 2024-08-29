@@ -70,7 +70,7 @@ public class UserJdbcRepository implements UserRepository {
     @Override
     public List<User> getAllUsers() {
 
-        List<User> users = new ArrayList<>();
+        LinkedList<User> users = new LinkedList<>();
 
         try {
             Statement statement = connection.createStatement();
