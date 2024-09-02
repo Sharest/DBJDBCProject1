@@ -13,6 +13,8 @@ dependencies {
     implementation("org.postgresql:postgresql:42.7.3")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    implementation ("org.hibernate:hibernate-core:6.6.0.Final")
+
 
 }
 

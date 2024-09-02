@@ -1,10 +1,11 @@
 package com.dsvdev;
 
-import com.dsvdev.repository.UserJdbcRepository;
+import com.dsvdev.repository.UserHibernateRepository;
+import com.dsvdev.repository.UserRepository;
 
 public class Main {
     public static void main(String[] args) {
-        UserJdbcRepository userRepository = new UserJdbcRepository();
+        UserRepository userRepository = new UserHibernateRepository();
 
         userRepository.createUsersTable();
 

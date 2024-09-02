@@ -1,12 +1,12 @@
 import com.dsvdev.model.User;
-import com.dsvdev.repository.UserJdbcRepository;
+import com.dsvdev.repository.UserHibernateRepository;
 import com.dsvdev.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 public class UserRepositoryTest {
-    private final UserRepository userRepository = new UserJdbcRepository();
+    private final UserRepository userRepository = new UserHibernateRepository();
 
     private final String testName = "Ivan";
     private final String testLastName = "Ivanov";
