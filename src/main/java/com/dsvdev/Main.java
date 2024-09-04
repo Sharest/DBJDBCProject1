@@ -1,5 +1,6 @@
 package com.dsvdev;
 
+import com.dsvdev.config.Util;
 import com.dsvdev.repository.UserHibernateRepository;
 import com.dsvdev.repository.UserRepository;
 
@@ -19,5 +20,7 @@ public class Main {
         userRepository.cleanUsersTable();
 
         userRepository.dropUsersTable();
+
+        Util.getSessionFactory().close();
     }
 }
